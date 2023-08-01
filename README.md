@@ -1,4 +1,4 @@
-# Portfolio Project Readme
+# Code Creator Readme
 
 Welcome to my Code-Creator Project! This project showcases my skills in HTML, CSS, and JavaScript, featuring a plethora of captivating CSS animations and unique AI-generated images. Below, you will find a brief overview of the project and instructions on how to set it up and explore my work.
 
