@@ -1,0 +1,87 @@
+<!-- bit.ly/OIBSIP_July2Submission -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8" />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Special+Elite">
+        <!-- including icon pack -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+
+        <link rel="stylesheet"  href="style.css">
+
+        <title>Personal portfolio</title>
+    </head>
+
+    <body>
+        <header>
+            <a href="#" class="logo">Code Creator</a>
+            <nav class="navbar">
+                
+                <ul class="menu">
+                    <li><a class="page-links active" href="#">Home</a></li>
+                    <li><a class="page-links" href="work.html">Work</a></li>
+                    <li><a class="page-links" href="bio.html">Bio</a></li>
+                    <li><a class="page-links" href="contact.html">Contact</a></li>
+                    <li><a class="page-links" href="https://drive.google.com/file/d/1f7yXGiL78PTyeCpKkcEj6f4bimC_dFxT/view?usp=drivesdk">My Resume</a></li>
+                </ul>
+
+            </nav>
+
+        </header>
+
+
+        <section class="introduction">
+            <div class="home-container">
+                <h3 class="greetings">Hello,Ready to take the adventure with me</h3>
+                <h1 class="name-display">Siddharth Chandani</h1>
+                <h3 class="description-display">And I'm a <span class="text-changer"></span>
+                </h3>
+                <p class="detail-display">
+                    "Meet Siddharth Chandani, a boundless wellspring of creativity,
+                    With an insatiable zest for life,
+                    embodies a harmonious blend of artistic ingenuity and an unwavering love for the natural world,
+                    an individual whose spirit dances amidst the vibrant hues of both the human spirit and the emerald
+                    wonders of nature."</p>
+
+                <div class="icon-holder">
+                    <a href="#" class="icons"><i class='bx bxl-facebook-square'></i></a>
+                    <a href="https://github.com/Sidchandani" class="icons"><i class='bx bxl-github'></i></a>
+                    <a href="www.linkedin.com/in/siddharth-chandani-1532k25" class="icons"><i
+                            class='bx bxl-linkedin'></i></a>
+                    <a href="#" class="icons"><i class='bx bxl-youtube'></i></a>
+                </div>
+
+            </div>
+            <div class="image-holder-home">
+                <img onmouseover="changeOpacity(this, 0.3)" onmouseout="changeOpacity(this, 0.6)" class="imgo"
+                    src="Asset/home.png" alt="picture of Siddharth" height="600vh" width="600vw" style="opacity: 0.6;">
+
+            </div>
+        </section>
+
+        <!-- CDN for typed function -->
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            function changeOpacity(element, opacity) {
+                element.style.opacity = opacity;
+
+            }
+            var typed = new Typed(".text-changer", {
+                strings: ["Frontend Developer", "Backend Developer", "Programmer", "Problem Solver","Full Stack Developer"],
+                typeSpeed: 80,
+                backSpeed: 80,
+                backDelay: 1000,
+                loop: true
+            });
+        </script>
+        </div>
+
+    </body>
+
+</html>

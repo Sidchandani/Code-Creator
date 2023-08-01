@@ -1,0 +1,597 @@
+
+:root {
+   
+    --main-font:'Poppins';
+    --logo-font:'Nosifer';
+    --alternate-logo:'Special Elite';
+    --bodybackground-color:#081C29;
+    --logo-color:white;
+    --first-color:#00ffff;
+    --third-color:#333;
+    --fourth-color:#666;
+    --fifth-color: #e91e63;
+    --sendbutton-color:#1f242d;
+    --about-text-font-color:#545454;
+    --font-color-optional:#00ABF1;
+
+    --min-hight-page:100vh;
+}
+
+
+            /*----------------------------------------------------------------*/
+            /*---------------------------- Styling Index.html ----------------*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:var(--main-font),sans-serif ;
+    color: var(--logo-color);
+}
+body{
+
+    background-color: var(--bodybackground-color);
+    /* min-height: var(--min-hight-page); */
+}
+
+header{
+    position : relative ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5rem;
+    padding-right:10rem; 
+    background: transparent;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-top: 1.8rem;
+    margin-left: 0rem;
+    font-family:var(--alternate-logo),sans-serif ;
+    font-weight: 700;
+    font-size: 3.3em;
+    text-decoration: none;
+    color: var(--logo-color);
+    animation: slideRight 1s ease-in-out;
+}
+@keyframes slideRight {
+    0% {
+        transform:translateX(-30rem);
+        opacity: 0;
+    }
+    100%{
+        transform:translateX(0rem);
+        opacity: 1;
+
+    }
+    
+}
+
+
+.home-container .greetings{
+    font-size: 1.5em;
+}
+.home-container .name-display{
+    font-size: 2.2em;
+}
+.home-container .description-display{
+    font-size: 1.9em;
+}
+.home-container .description-display span{
+    margin-left: 0.5em;
+    color: var(--first-color);
+}
+.home-container .detail-display{
+    font-size: 1.5em;
+}
+
+
+
+/* menu style*/
+.menu {
+    display: flex;
+    list-style: none;
+  }
+  
+.menu a {
+    margin-left: 4.5rem;
+    text-decoration: none;
+    color:var(--logo-color);
+}
+  
+
+li a:hover{
+    color: var(--second-color);
+}
+
+.page-links{
+    color: var(--logo-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.8em;
+    transition: color 0.2s ease-in-out 0.1s;
+    
+}
+
+.page-links:hover, .page-links.active{
+    color: var(--first-color);
+}
+
+/* menu style end here*/
+
+
+
+/*home image animation*/
+.image-holder-home{
+    
+    border-radius: 40%;
+    box-shadow: #0ef;
+    border: 1rem  solid var(--first-color) ;
+    border-bottom: none;
+    transition: border-radius 0.8s ease-in-out 0.5s;
+}
+
+.imgo{
+    transition: opacity 0.8s ease-in-out 0.2s;
+}
+
+
+/* description */
+.introduction{
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--logo-color);
+    margin-top: 7rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    
+}
+.description-display{
+    margin-top: 1rem;
+}
+
+.introduction h1{
+    margin-top: 1rem;
+}
+
+.icon-holder{
+    margin-top: 1.5rem;
+    margin-left: 10rem;
+}
+
+.icons{
+    text-decoration: none;
+    margin-left: 1.2rem;
+    font-size: 2.1em;
+    font-weight: 600;
+    color: var(--logo-color);
+}
+
+.icon-holder .icons i{
+    animation: slideBottom 1s ease-in forwards 0.5s;
+}
+
+@keyframes slideBottom{
+    0%{
+        transform: translateX(-5rem);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0rem);
+        opacity: 1;
+    }
+}
+
+i:hover{
+    color:var(--first-color);
+}
+
+.home-container{
+    max-width: 55%;
+}
+.detail-display{
+    text-indent: 2em;
+    line-height: 2em;
+    font-size: 4px;
+    text-align: justify;
+}
+
+
+            /*----------------------------------------------------------------*/
+            /*---------------------------- Styling Contact.html ----------------*/
+
+.box .icon i{
+    animation: slidebar 1s ease-in-out 0.2s forwards; 
+}
+@keyframes slidebar {
+    0%{
+        transform: translateX(-5rem);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0rem);
+        opacity: 1;
+    }
+}
+
+.contact{
+    padding :1.5rem 1.5rem;
+}
+.contact .content{
+    text-align: center;
+}
+.contact .content h2{
+    font-weight: 500;
+    font-size: 2.9em;
+}
+.contact .content p{
+    font-weight: 300;
+    font-size: 1.5rem;
+    
+}
+.container{
+    width: 100%;
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .contact-info{
+    width: 35%;
+}
+.container .contact-info .box{
+    display: flex;
+    padding: 2rem 0rem;
+}
+.container .contact-info .box .icon{
+    min-width: 3rem;
+    padding-left: 1.2rem;
+    padding-top: 1.2rem;
+    font-size: 2.2em;
+}
+.container .contact-info .box .text{
+    margin-left: 1.2rem;
+    font-size: 1.5em;
+
+}
+.container .contact-info .box .text h3{
+    color: var(--first-color);
+    font-weight: 400;
+}
+.contact-form{
+    width: 35%;
+    max-height: 70vh;
+    background: var(--logo-color);
+    padding: 1.1rem;
+    border-radius: 1.8rem;
+    animation: slidedirections 1s ease-in-out forwards;
+    margin-left: 1.1rem;
+}
+
+@keyframes slidedirections {
+    0%{
+        transform:translateX(5rem);
+        opacity: 0;
+    }
+    100%{
+        transform:translateX(0rem);
+        opacity: 1;
+
+    }
+    
+}
+
+.contact-form h2{
+    margin-left: 5rem;
+    font-weight: 400;
+    font-size: 2em;
+    color: var(--third-color);
+}
+.contact-form .input-box{
+    margin-top: 0.3rem;
+    width: 100%;
+}
+.contact-form .input-box input,.contact-form .input-box textarea
+{
+    width: 85%;
+    padding: 1.2rem;
+    font-size: 1.5em;
+    color: var(--third-color);
+    margin: 2.1rem 0rem;
+    border: none;
+    border-bottom: 0.1em solid var(--third-color);
+    outline: none;
+} 
+#submit-box{
+    cursor: pointer;
+    background-color: var(--bodybackground-color);
+    color: var(--logo-color);
+    font-size: 1.4em;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    outline: none;
+    width: 45%;
+    height:7vh;
+    margin-bottom: 0.3rem;
+}
+
+.vertical {
+    border-left: 1.4em solid var(--first-color);
+    height: 50vh;
+    
+}
+
+
+
+
+
+
+            /*----------------------------------------------------------------*/
+            /*---------------------------- Styling Bio.html----------------*/
+
+
+.hrreact{
+    width: 27%;
+    color: var(--first-color);
+    font-size: 1.7em;
+
+}
+
+.language .text-holder{
+    color:var(--logo-color);
+    font-size: 1.5em;
+    width: 60%;
+    margin-right:0.8rem;
+
+}
+.oneframe-holder{
+    display: flex;
+    width: 100%;
+    margin-top: 0.4rem;
+
+}
+.language {
+    margin-top: 2rem;
+    width: 35%;
+}
+
+.new-holder{
+    width: 100%;
+    display: flex;
+    margin-left: 6.3rem;
+
+}
+.new-holder .right{
+    width: 50%;
+    margin-left: 5rem;
+    margin-top: 12rem;
+}
+.new-holder .left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.new-holder .right .top-right {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.new-holder .spliter {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    width:0.2%;
+    height: 45rem;
+    background: var(--first-color);
+    animation: slideup 1s  ease-in-out forwards;
+}
+
+.card-frame .img-box{
+    border-radius: 1rem;
+    border-bottom-right-radius: 0;
+    height: 10rem;
+}
+
+#backend{
+        background: url("Asset/backend.png");
+        background-size: cover;
+}
+
+#frontend{
+    background: url("Asset/frontend\ \(2\).png");   
+    background-size: cover;
+}
+
+.card-frame .price-tag
+{
+    position: absolute;
+    top: -1.9rem;
+    background: var(--bodybackground-color);
+    border-top: 0.2rem solid var(--font-color-optional);
+    border-right:0.2rem solid var(--font-color-optional);
+    width: 50%;
+    height: 2rem;
+    border-top-right-radius: 1rem;
+    padding-left: 1rem;
+    left: 0;
+    
+}
+.card-frame .price-tag h3{
+    font-size: 1.6em;
+    font-weight: 400;
+    color: var(--first-color);
+
+}
+.card-frame .content{
+    position: relative;
+    border: 0.1rem solid var(--font-color-optional);
+    
+    height: 14rem;
+    padding: 0 1.5rem; 
+    line-height: 2rem;
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+
+}
+
+.top-right .separator{
+    width: 0.5%;
+    background: var(--first-color);
+    height: 22rem;
+    animation: slideup 1s  ease-in-out forwards; 
+}
+@keyframes slideup {
+    0%{
+        transform:translateY(20rem);
+        opacity: 0;
+    }
+    100%{
+        transform:translateY(0rem);
+        opacity: 1;
+
+    }
+    
+}
+
+.description{
+    margin-top: 3rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    width: 53rem;
+    height: 35rem;
+    border: 0.1rem solid var(--font-color-optional)   
+
+}
+.text-description-about{
+    font-size: 1.4em;
+    color: var(--about-text-font-color);
+    line-height: 1.5em;
+    text-align: justify;
+    margin-top: 1.5rem;
+
+
+}
+
+.title-holder h3{
+    text-align: center;
+    font-weight: 400;
+    font-size:1.8em;
+    color: var(--logo-color);
+
+}
+.desc-holder{
+    padding: 1rem;
+    box-shadow: 0 3rem 3rem rgba(0,0,0,0.4);
+    animation: slidedesc 1s ease-in-out forwards;
+
+}
+@keyframes slidedesc {
+    0%{
+        transform: translateX(2rem);
+        opacity:0; 
+    }
+    100%{
+        transform: translateX(0rem);
+        opacity:1
+    }
+    
+}
+.desc-holder p{
+    color: #C0CBD8;
+
+}
+
+
+
+            /*----------------------------------------------------------------*/
+            /*---------------------------- Styling work.html ----------------*/
+
+
+.work-container{
+    width: 100%;
+    margin-top: 5rem;
+    text-align: center;
+
+}
+.card-work{
+    min-height: 55vh;
+    width: 35rem;
+    box-shadow: 0 3rem 3rem rgba(0,0,0,0.4);
+    margin-left: 1.2rem;
+    
+    animation: slidecards 1s ease-in-out  forwards;
+
+}
+@keyframes slidecards {
+    0%{
+        transform: translateX(3.2rem);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
+}
+.logo-work{
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 7.5rem;
+
+}
+.logo-work img{
+     width: 22rem;
+     z-index: 2;
+}
+
+
+.info-work h1{
+    font-size: 1.6rem;
+    font-weight: 500;
+
+}
+.info-work h3{
+    font-size: 1.5rem;
+    padding: 2rem 0rem;
+    color:var(--fourth-color );
+    font-weight: 600;
+}
+.contact-work{
+    margin-left:3rem ;
+    margin-top: 0.5rem;
+    height: 0.8rem;
+    width:80%;
+    
+}
+
+.total-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 21.2rem;
+    margin-top: 6.3rem;
+}
+#ico{
+    font-size: 3rem;
+}
+
+#ShopMate{
+    position: relative;
+    bottom: -21px;
+    left: -13px;
+}
+#DealDash{
+    position: relative;
+    left: -20px;
+    bottom: -26px;
+}
