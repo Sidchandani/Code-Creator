@@ -23,6 +23,7 @@
 
 
 *{
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -30,7 +31,7 @@
     color: var(--logo-color);
 }
 body{
-
+    zoom:.5;
     background-color: var(--bodybackground-color);
     /* min-height: var(--min-hight-page); */
 }
@@ -267,7 +268,7 @@ i:hover{
 }
 .contact-form{
     width: 35%;
-    max-height: 70vh;
+    max-height: 95vh;
     background: var(--logo-color);
     padding: 1.1rem;
     border-radius: 1.8rem;
@@ -318,7 +319,7 @@ i:hover{
     border-radius: 0.5rem;
     outline: none;
     width: 45%;
-    height:7vh;
+    height:12vh;
     margin-bottom: 0.3rem;
 }
 
